@@ -1,0 +1,16 @@
+*¨{
+    width: 0;
+    height: 0;
+    font-family: Raleway, sans-serif;
+}
+
+#favicon {
+  width: 35px;
+}
+
+#blur {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+
