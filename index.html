@@ -27,10 +27,16 @@
       src="https://kit.fontawesome.com/944b203749.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./assets/js/index.js"></script>
-    <title>Viajes Chile</title>
+    <title>Viajes Chile - Nicolás Valderrama</title>
   </head>
-  <body style="background-color: black">
+  <body style="font-family: Raleway, sans-serif; background-color: black">
     <!-- navbar -->
     <nav id="blur" class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container">
@@ -50,33 +56,35 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="#inicio-top" href="#"
+                >Inicio</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link" href="#tarjetas">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Carrousel  -->
-    <header>
-      <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5">
+    <header id="inicio-top">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="10000">
             <img
               src="./assets/img/carousel1.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <img
               src="./assets/img/carousel2.jpg"
               class="d-block w-100"
@@ -111,8 +119,8 @@
         </button>
       </div>
     </header>
-    <!-- parrafos  -->
     <main>
+      <!-- parrafos  -->
       <section
         id="quienes-somos"
         class="container d-none d-md-block text-light mb-4"
@@ -124,10 +132,10 @@
         <div class="row">
           <div class="col-12 col-md-4 mb-3">
             <div>
-              <div class="bg-primary container text-center text-light">
+              <div class="bg-primary container text-center text-light plane">
                 <i class="fa-solid fa-plane text center"></i>
               </div>
-              <p class="text-light">
+              <p id="plane" class="text-light">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
                 ipsam, porro assumenda esse libero quia autem in possimus
                 reiciendis totam sint unde doloremque laboriosam laudantium odit
@@ -144,7 +152,7 @@
           </div>
           <div class="col-12 col-md-4 mb-3">
             <div>
-              <p class="text-light">
+              <p id="mountain" class="text-light">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
                 ipsam, porro assumenda esse libero quia autem in possimus
                 reiciendis totam sint unde doloremque laboriosam laudantium odit
@@ -157,17 +165,17 @@
                 provident hic corrupti nisi accusantium obcaecati harum, earum
                 quibusdam. Enim explicabo ut vero.
               </p>
-              <div class="bg-primary container text-center text-light">
+              <div class="bg-primary container text-center text-light mountain">
                 <i class="fa-solid fa-mountain"></i>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 mb-3">
             <div>
-              <div class="bg-primary text-center text-light">
+              <div class="bg-primary text-center text-light route">
                 <i class="fa-solid fa-route"></i>
               </div>
-              <p class="text-light">
+              <p id="route" class="text-light">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
                 ipsam, porro assumenda esse libero quia autem in possimus
                 reiciendis totam sint unde doloremque laboriosam laudantium odit
@@ -185,14 +193,14 @@
         </div>
       </section>
       <!-- Cards -->
-      <section class="container">
+      <section id="tarjetas" class="container">
         <h3 class="text-center text-light">
           DESTACADOS
           <hr />
         </h3>
         <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 card-full">
               <img
                 src="./assets/img/card1.jpg"
                 class="card-img-top h-50"
@@ -208,7 +216,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 card-full">
               <img
                 src="./assets/img/card2.jpg"
                 class="card-img-top h-50"
@@ -224,14 +232,16 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 card-full">
               <img
                 src="./assets/img/card3.jpg"
                 class="card-img-top h-50"
                 alt="fotografía de un salar"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">
+                  Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit
+                </h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   eaque nostrum provident nisi praesentium dolorem quidem illum.
@@ -240,7 +250,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100 card-full">
               <img
                 src="./assets/img/card4.jpg"
                 class="card-img-top h-50"
@@ -257,52 +267,76 @@
           </div>
         </div>
       </section>
+      <!-- Form -->
+      <section id="contacto" class="text-white py-4">
+        <div class="container mt-5">
+          <h3 class="text-center text-uppercase">
+            Contacto
+            <hr />
+          </h3>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required />
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" required />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button id="enviar" type="button" class="btn btn-info text-white">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <!-- Form -->
-    <section class="text-white py-4">
-      <div class="container mt-5">
-        <h3 class="text-center text-uppercase">
-          Contacto
-          <hr />
-        </h3>
-        <form>
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" required />
-          </div>
-          <div class="mb-3">
-            <label for="asunto" class="form-label">Asunto</label>
-            <input type="text" class="form-control" id="asunto" required />
-          </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea
-              class="form-control"
-              id="mensaje"
-              rows="10"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-info text-white">Enviar</button>
-        </form>
-      </div>
-    </section>
     <!-- footer -->
     <footer class="bg-primary text-light p-4">
       <div class="container">
-        <p>VIAJES CHILE</p>
+        <a style="text-decoration: none" class="text-white" href="#inicio-top"
+          >VIAJES CHILE</a
+        >
         <div class="d-flex justify-content-end">
           <div class="me-3">
-            <i class="fa-brands fa-square-github fa-2x"></i>
+            <i
+              class="fa-brands fa-square-github fa-2x"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Github"
+            ></i>
           </div>
           <div class="me-3">
-            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <i
+              class="fa-brands fa-linkedin fa-2x"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="LinkedIn"
+            ></i>
           </div>
           <div class="me-3">
-            <i class="fa-brands fa-square-twitter fa-2x"></i>
+            <i
+              class="fa-brands fa-square-twitter fa-2x"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Twitter"
+            ></i>
           </div>
           <div class="me-3">
-            <i class="fa-brands fa-square-facebook fa-2x"></i>
+            <i
+              class="fa-brands fa-square-facebook fa-2x"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Facebook"
+            ></i>
           </div>
         </div>
       </div>
