@@ -75,27 +75,32 @@
     </nav>
     <!-- Carrousel  -->
     <header id="inicio-top">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade mb-5"
+        data-bs-ride="carousel"
+        style="height: 100vh"
+      >
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100" data-bs-interval="10000">
             <img
               src="./assets/img/carousel1.jpg"
-              class="d-block w-100"
-              alt="..."
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Fotografía de unas Alpacas"
             />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item h-100" data-bs-interval="2000">
             <img
               src="./assets/img/carousel2.jpg"
-              class="d-block w-100"
-              alt="..."
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Fotografía de unos Moai"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item h-100">
             <img
               src="./assets/img/carousel3.jpg"
-              class="d-block w-100"
-              alt="..."
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Fotografía de un pinguino"
             />
           </div>
         </div>
@@ -200,14 +205,14 @@
         </h3>
         <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col">
-            <div class="card h-100 card-full">
+            <div class="card h-100 card-full bg-primary text-light">
               <img
                 src="./assets/img/card1.jpg"
                 class="card-img-top h-50"
                 alt="Fotografía de un lago"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem, ipsum dolor sit amet</h5>
+                <h5 class="card-title">Lorem, ipsum dolor sit</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   eaque nostrum provident nisi praesentium dolorem quidem illum.
@@ -216,14 +221,14 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 card-full">
+            <div class="card h-100 card-full bg-primary text-light">
               <img
                 src="./assets/img/card2.jpg"
                 class="card-img-top h-50"
                 alt="Fotografía de un lago y montañas"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem, ipsum dolor sit amet</h5>
+                <h5 class="card-title">Lorem, ipsum dolor sit</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   eaque nostrum provident nisi praesentium dolorem quidem illum.
@@ -232,16 +237,14 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 card-full">
+            <div class="card h-100 card-full bg-primary text-light">
               <img
                 src="./assets/img/card3.jpg"
                 class="card-img-top h-50"
                 alt="fotografía de un salar"
               />
               <div class="card-body">
-                <h5 class="card-title">
-                  Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit
-                </h5>
+                <h5 class="card-title">Lorem, ipsum dolor sit</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   eaque nostrum provident nisi praesentium dolorem quidem illum.
@@ -250,14 +253,14 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 card-full">
+            <div class="card h-100 card-full bg-primary text-light">
               <img
                 src="./assets/img/card4.jpg"
                 class="card-img-top h-50"
                 alt="Fotografía de un bosque"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem, ipsum dolor sit amet</h5>
+                <h5 class="card-title">Lorem, ipsum dolor sit</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                   eaque nostrum provident nisi praesentium dolorem quidem illum.
@@ -270,8 +273,8 @@
       <!-- Form -->
       <section id="contacto" class="text-white py-4">
         <div class="container mt-5">
-          <h3 class="text-center text-uppercase">
-            Contacto
+          <h3 class="text-center">
+            CONTACTO
             <hr />
           </h3>
           <form>
@@ -301,8 +304,8 @@
     </main>
     <!-- footer -->
     <footer class="bg-primary text-light p-4">
-      <div class="container">
-        <a style="text-decoration: none" class="text-white" href="#inicio-top"
+      <div class="container d-flex align-items-center justify-content-between">
+        <a style="text-decoration: none; font-size: 23px;" class="text-white" href="#inicio-top"
           >VIAJES CHILE</a
         >
         <div class="d-flex justify-content-end">
